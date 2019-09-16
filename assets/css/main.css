@@ -14,7 +14,16 @@
 ul,li{
   list-style: none
 }
-a{text-decoration: none}
+a{
+  text-decoration: none;
+  color:black
+}
+.clearfix:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
 
 /* 2-standard and fonts */
 
@@ -32,15 +41,14 @@ main{
   border:2px solid red;
   margin:40px auto;
 }
-main:after{
+/* main:after{
   content:"";
   display:table;
   clear:both;
-}
+} Sostituito con la classe*/
 /* content */
 header,nav,section,aside,footer{
   border:2px solid violet; /*placeholder only*/
-  height:50px;/*placeholder only*/
   float:left;
 }
 header,nav,footer{
@@ -52,4 +60,119 @@ section{
 }
 aside{
   width:25%
+}
+/* header details */
+header{
+  background: url("../img/default-header.jpg");
+  background-size: cover;
+  background-position: center top;
+  height:350px;
+  border:10px solid white;
+    text-align: center;
+    color:white;
+    position:relative;
+}
+header img{
+  display: block;
+  width:150px;
+  margin:auto;
+  margin-top:40px;
+}
+header h1{
+  display: inline-block;
+  font-size: 80px;
+  font-weight: lighter;
+  border:4px solid white;
+  padding:5px 20px;
+}
+header .subtitle{
+  display:block;
+  width:100%;
+  position: absolute;
+  bottom:0;
+  padding:25px 0;
+  font-size:28px;
+  font-weight: lighter;
+}
+
+/* menu details */
+nav{
+  border:3px solid green;
+}
+ul, li{
+  border: 1px solid blue;
+  float:left;
+  }
+ul{
+  width:100%;
+  height:50px;
+  border:3px solid yellow;
+}
+li{
+  width:14.2%;
+  height:100%;
+  font-size:13px;
+  text-align: center;
+  position: relative;
+}
+a{
+  display:block;
+  border:1px solid red;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+/* sidebar details */
+aside,section{
+  margin-top: 10px;
+}
+.sidebar{
+  border-radius: 5px;
+}
+.sidebar>*{
+  height:150px;
+  margin:20px 10px;
+  padding:10px;
+  background:lightgreen;
+  font-size: 14px;
+}
+aside .rssInfo{
+  height:80px;
+  margin-top: 10px;
+  background: orange;
+}
+
+/* section article */
+.mainArticle>*{
+  height:200px;
+  background: white;
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom: 20px;
+}
+
+/* section ads */
+.ads>*{
+  height:250px;
+  background: lightblue;
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer{
+  height:150px;
+  background:#eee;
+  text-align: center;
+}
+footer .sign{
+  padding:10px;
+}
+footer ul{
+  height:80px;
+}
+footer ul li{
+  width:33.3%;
+  line-height: 80px; /*placeholder*/
 }
