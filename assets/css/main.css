@@ -1,0 +1,45 @@
+/* TOCC
+@import (not for now)
+1-reset
+2-standard and fonts
+3-contents
+4-responsive (non for now)*/
+
+/* 1 reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+ul,li{
+  list-style: none
+}
+a{text-decoration: none}
+
+/* 2-standard and fonts */
+
+body{
+  background:url("../img/default-pattern.png");
+  font-family:Arial, sans-serif;
+  font-size: 16px;
+  width:100%;
+}
+
+/* 3 contents */
+/* main */
+main{
+  width:60%;
+  border:2px solid red;
+  margin:40px auto;
+}
+main:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+/* content */
+header,nav,section,aside,footer{
+  border:2px solid violet; /*placeholder only*/
+  height:50px;/*placeholder only*/
+  float:left;
+}
