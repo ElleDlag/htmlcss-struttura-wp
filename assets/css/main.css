@@ -43,3 +43,11 @@ header,nav,section,aside,footer{
   height:50px;/*placeholder only*/
   float:left;
 }
+header,nav,footer{
+  width:100%
+}
+section,aside{
+  width:33.333%
+}
+section{
+  padding:0 20px}
